@@ -55,7 +55,7 @@ By integrating the dialer directly into the system via a flashable module, all o
 ## 🧪 Tested Environment
 * **Device:** Motorola Moto G54 5G
 * **ROM:** PixelOS (AOSP 17)
-* **Android Version:** Android 17 QPR2
+* **Android Version:** Android 17 QPR0
 * **Tested By:** Procelight
 
 ---
