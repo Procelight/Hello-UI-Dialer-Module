@@ -1,40 +1,62 @@
-# Hello-UI-Dialer-Module
-Magisk / KernelSU module to install Motorola Hello UI Dialer on AOSP custom ROMs.
+# Hello UI Dialer (Flashable Root Module)
 
-# Motorola Hello UI Dialer (Magisk / KernelSU Module)
+A system-integrated, flashable ZIP module of the **Motorola Hello UI Dialer** built for rooted AOSP-based custom ROMs.
 
-A systemless module that brings **Motorola's Hello UI Dialer (Phone & Contacts)** to AOSP-based custom ROMs, replacing Google Dialer with clean UI and built-in call recording support (without announcement).
-
----
-
-## ✨ Features
-- Official Motorola Hello UI Phone & InCallUI interface
-- Clean, ad-free Material You experience
-- Built-in Call Recording support (device & region dependent)
-- Works systemlessly via Magisk, KernelSU, and APatch
-
----
-
-## 📋 Requirements
-- **Root:** Magisk v24.0+, KernelSU / KernelSU Next, or APatch
-- **OS:** Android 13 / 14 / 15 / 16+ (AOSP / Pixel-based custom ROMs recommended)
-- **Architecture:** `arm64-v8a`
-- *Note: Not recommended for heavily modified OEM skins (OneUI, HyperOS, ColorOS) due to package conflicts.*
+While the original non-rooted APK port by **AndroPort World (APW)** lets you install the app, several core calling features remain broken without system-level permissions. This module converts it into a rooted, flashable ZIP to fix those broken features and deliver a complete, native dialer experience on AOSP.
 
 ---
 
 ## 📥 Download
 Grab the latest `.zip` file from the **[Releases](../../releases)** page.
 
+*(You can directly flash the downloaded `.zip` file—no manual extraction or APK installation needed.)*
+
 ---
 
-## 🛠️ Installation Guide
-1. Download the latest `Hello-UI-Dialer.zip` from **Releases**.
-2. Open **Magisk** / **KernelSU** / **APatch** → go to **Modules** → **Install from storage**.
-3. Select the downloaded `.zip` file and wait for flashing to complete.
-4. **Reboot** your device.
-5. Go to **Settings > Apps > Default apps > Phone app** and select **Phone** (Hello UI Dialer).
-6. Long-press the Phone app icon → **App info > Permissions** and allow all required permissions (Phone, Contacts, Call logs, Microphone).
+## 🔍 The Changes Done In My Project!
+
+### ❌ What's Unstable on the APW Non-Rooted APK
+Because the original port is a standard non-rooted `.apk` without system integration, the following core features do not work properly:
+* **Incoming Call View** – Broken
+* **Ongoing Call View** – Broken
+* **Favourites Option** – Broken
+* **Call Log** – Broken
+* **Voicemail** – Broken
+* **Call Recording** – Broken
+
+### ✅ What's Fixed in This Rooted Module (ZIP)
+By integrating the dialer directly into the system via a flashable module, all of the above issues are resolved:
+* **Incoming Call View** – Fully working
+* **Ongoing Call View** – Fully working
+* **Favourites Option** – Fully working
+* **Call Log** – Fully working
+* **Voicemail** – Fully working
+* **Call Recording** – Fully working
+
+---
+
+## 🚀 What's Fixed & Improved in Version 2.0 (Latest Release)
+* **Contact Search Fixed** – Searching through your saved contacts now works smoothly.
+* **Dialpad Search Fixed** – Number/name search directly from the dialpad is now fixed.
+* **Improved App Performance** – Faster loading, smoother animations, and better overall stability.
+* **Ongoing Video Call UI Improved** – Visual and layout improvements for ongoing video calls. *(Note: Video calling has not been tested, so full functionality cannot be guaranteed.)*
+
+---
+
+## 📲 Installation Instructions
+1. Head over to the **[Releases Page](https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest)** and download the latest `.zip` file.
+2. Open **Magisk**, **KernelSU**, or **KernelSU-Next**.
+3. Navigate to the **Modules** tab and tap **Install from storage**.
+4. Select the downloaded `.zip` file to flash it directly.
+5. Reboot your device and set Hello UI Dialer as your default phone app if prompted.
+
+---
+
+## 🧪 Tested Environment
+* **Device:** Motorola Moto G54 5G
+* **ROM:** PixelOS (AOSP 17)
+* **Android Version:** Android 17 QPR2
+* **Tested By:** Procelight
 
 ---
 
@@ -46,6 +68,7 @@ Grab the latest `.zip` file from the **[Releases](../../releases)** page.
 ---
 
 ## 🙏 Credits
-- Motorola Mobility for the original Hello UI Phone APK
-- Custom ROM & Android porting community
+* **AndroPort World (APW)** – Original credit for the non-rooted Hello UI Dialer APK. This project builds upon their port to create a rooted, flashable ZIP module with full system-level fixes.
 
+
+---
